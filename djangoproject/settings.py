@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'hello_world_app',
+    'Score',
 ]
 
 MIDDLEWARE = [

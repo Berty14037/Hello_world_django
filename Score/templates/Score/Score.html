@@ -1,0 +1,16 @@
+<html >
+    <meta charset="UTF-8">
+
+
+    <body>
+        
+        <h1>Score Form</h1>
+        <form method="post" action="{% url 'score_form' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+
+
+</html>
