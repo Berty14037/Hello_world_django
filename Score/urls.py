@@ -5,4 +5,6 @@ from .views import score_view
 
 urlpatterns = [
     path('', score_view, name='score_form'),
+
+    
 ]

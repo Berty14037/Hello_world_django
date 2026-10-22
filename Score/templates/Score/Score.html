@@ -8,7 +8,21 @@
         <form method="post" action="{% url 'score_form' %}">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Submit</button>
+            <button type="submit" name="submit_score">Submit</button>
+        </form>
+
+        <h1>Score List</h1>
+        <ul>
+            {% for score in scores %}
+                <li>{{ score.name }} : {{ score.score}}</li>
+            {% endfor %}
+        </ul>
+
+        <h1>Delete Score</h1>
+        <form method="post" action="{% url 'score_form' %}">
+            {% csrf_token %}
+            {{ delete_form.as_p }}
+            <button type="submit" name="delete_score">Delete</button>
         </form>
     </body>
 

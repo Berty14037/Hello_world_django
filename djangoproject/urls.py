@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hello_world_app.urls')),
     path('score/', include('Score.urls')),
+    
 ]
